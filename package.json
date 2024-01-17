@@ -1,0 +1,10 @@
+{
+  "dependencies": {},
+  "scripts": {
+    "build": "npx tailwindcss -i ./input.scss -o ./styles/output.css",
+    "dev": "npx tailwindcss -i ./input.scss -o ./styles/output.css -w"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
