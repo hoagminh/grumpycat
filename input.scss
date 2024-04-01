@@ -3,66 +3,63 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: "pd";
-	src: url("../assets/fonts/PerfectDarkBRK.eot");
-	src: url("../assets/fonts/PerfectDarkBRK.eot?#iefix")
-			format("embedded-opentype"),
-		url("../assets/fonts/PerfectDarkBRK.woff2") format("woff2"),
-		url("../assets/fonts/PerfectDarkBRK.woff") format("woff"),
-		url("../assets/fonts/PerfectDarkBRK.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+  font-family: "pd";
+  src: url("../assets/fonts/PerfectDarkBRK.eot");
+  src: url("../assets/fonts/PerfectDarkBRK.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/PerfectDarkBRK.woff2") format("woff2"),
+    url("../assets/fonts/PerfectDarkBRK.woff") format("woff"),
+    url("../assets/fonts/PerfectDarkBRK.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: "vr";
-	src: url("../assets/fonts/VinqueRg-Regular.eot");
-	src: url("../assets/fonts/VinqueRg-Regular.eot?#iefix")
-			format("embedded-opentype"),
-		url("../assets/fonts/VinqueRg-Regular.woff2") format("woff2"),
-		url("../assets/fonts/VinqueRg-Regular.woff") format("woff"),
-		url("../assets/fonts/VinqueRg-Regular.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+  font-family: "vr";
+  src: url("../assets/fonts/VinqueRg-Regular.eot");
+  src: url("../assets/fonts/VinqueRg-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/VinqueRg-Regular.woff2") format("woff2"),
+    url("../assets/fonts/VinqueRg-Regular.woff") format("woff"),
+    url("../assets/fonts/VinqueRg-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: "wg";
-	src: url("../assets/fonts/WigWag.ttf") format("ttf");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+  font-family: "poppins";
+  src: url("./assets/fonts/Poppins-SemiBold.ttf") format("ttf");
 }
 
 .bg-gradient {
-	background: linear-gradient(-45deg, #181817, #000000, #052a37, #03261e);
-	background-size: 400% 400%;
-	-webkit-animation: gradient 15s ease infinite;
-	animation: gradient 15s ease infinite;
+  background: linear-gradient(-45deg, #181817, #000000, #052a37, #03261e);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
 }
 
 @-webkit-keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
