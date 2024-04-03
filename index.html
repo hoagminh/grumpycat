@@ -45,7 +45,7 @@
         src="./assets/astraunaut.webm"
       ></video>
       <div class="absolute inset-0 bg-black opacity-50"></div>
-      <div class="absolute inset-0 flex flex-col md:flex-row">
+      <div class="absolute inset-0 flex">
         <div class="flex justify-center items-center flex-col px-6 flex-1">
           <div class="flex items-center">
             <h1
@@ -104,27 +104,46 @@
             <img src="./assets/images/brand/coinmarketcap.svg" class="w-28" />
             <img src="./assets/images/brand/coingecko.svg" class="w-28" />
           </div>
-        </div>
-        <div
-          class="flex justify-center items-center flex-col px-6 flex-1 text-white font-poppins"
-        >
+
           <div
-            class="flex flex-col w-[100%] md:w-[60%] gap-2 bg-transparent backdrop-blur-lg p-4 shadow rounded shadow-yellow-500 mt-20"
+            class="flex flex-col w-[90%] md:w-[30%] gap-2 bg-transparent backdrop-blur-lg p-4 shadow rounded shadow-yellow-500 mt-10 text-white font-poppins"
           >
-            <h2 class="text-center font-bold text-xl">Presales Wallet</h2>
+            <h2 class="text-center font-bold text-xl">Presales Grumpycat</h2>
             <div class="flex justify-between">
-              <span>Min</span> <span>0.5 SOL</span>
+              <span>CA :</span> <span>Coming soon</span>
             </div>
             <div class="flex justify-between">
-              <span>Max</span> <span>5 SOL</span>
+              <span>Min :</span>
+              <div class="flex gap-1">
+                <span>0.5</span>
+                <img src="./assets/images/brand/solana.svg" class="w-5" />
+              </div>
             </div>
-            <input
-              type="number"
-              value="0.5"
-              min="0"
-              max="5"
-              class="p-2 outline-none border-none rounded bg-slate-800"
-            />
+            <div class="flex justify-between">
+              <span>Max :</span>
+              <div class="flex gap-1">
+                <span>5</span>
+                <img src="./assets/images/brand/solana.svg" class="w-5" />
+              </div>
+            </div>
+
+            <div class="relative mt-2 rounded-md shadow-sm">
+              <input
+                type="number"
+                min="0.5"
+                step="0.5"
+                class="block w-full rounded-sm border-0 py-1.5 pl-3 pr-10 text-gray-900 placeholder:text-gray-400 focus:outline-yellow-500 sm:text-sm sm:leading-6"
+                placeholder="0.5"
+              />
+              <div
+                class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3"
+              >
+                <span class="text-gray-500 sm:text-sm"
+                  ><img src="./assets/images/brand/solana.svg" class="w-5"
+                /></span>
+              </div>
+            </div>
+
             <div
               class="mt-4 font-poppins bg-yellow-300 text-gray-800 font-bold py-2 px-8 rounded-sm hover:bg-yellow-400 transition duration-300 ease-in-out transform hover:-translate-y-1"
             >
@@ -166,7 +185,6 @@
                 }, 1000);
               </script>
             </div>
-            <div></div>
           </div>
         </div>
       </div>
