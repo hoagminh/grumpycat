@@ -45,101 +45,129 @@
         src="./assets/astraunaut.webm"
       ></video>
       <div class="absolute inset-0 bg-black opacity-50"></div>
-      <div class="flex justify-center items-center flex-col absolute inset-0">
-        <div class="flex items-center">
-          <h1
-            class="lg:text-9xl md:text-7xl text-5xl text-yellow-300 font-bold mt-20"
-          >
-            Grumpy
-          </h1>
-          <img
-            src="./assets/images/grumpycat.png"
-            alt="Doge"
-            class="max-w-28 max-h-28 mt-3 md:mt-14"
-          />
-          <h1
-            class="lg:text-9xl md:text-7xl text-5xl text-yellow-300 font-bold mt-20"
-          >
-            Cat
-          </h1>
+      <div class="absolute inset-0 flex flex-col md:flex-row">
+        <div class="flex justify-center items-center flex-col px-6 flex-1">
+          <div class="flex items-center">
+            <h1
+              class="lg:text-9xl md:text-7xl text-5xl text-yellow-300 font-bold mt-20"
+            >
+              Grumpy
+            </h1>
+            <img
+              src="./assets/images/grumpycat.png"
+              alt="Doge"
+              class="max-w-28 max-h-28 mt-3 md:mt-14"
+            />
+            <h1
+              class="lg:text-9xl md:text-7xl text-5xl text-yellow-300 font-bold mt-20"
+            >
+              Cat
+            </h1>
+          </div>
+
+          <div class="mt-5 flex items-center gap-2 justify-center flex-wrap">
+            <a
+              href="https://raydium.io/swap/"
+              class="font-poppins tracking-[0.2rem] bg-yellow-300 text-gray-800 font-bold py-2 px-8 rounded-sm skew-x-[330deg] hover:bg-yellow-400 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+            >
+              <span
+                class="absolute inset-1 bg-transparent rounded-sm border-black border-2"
+              ></span>
+              <div class="-skew-x-[330deg]">BUY NOW</div>
+            </a>
+
+            <a
+              href="https://twitter.com/Realgrumpycats?t=wYUNWzV7qfXEhGsgJQnUOA&s=09"
+              class="font-poppins tracking-[0.2rem] text-white bg-transparent backdrop-blur-md font-bold py-2 px-3 rounded-sm skew-x-[330deg] hover:box-decoration-slice transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 shadow shadow-yellow-500"
+            >
+              <span class="absolute inset-1"></span>
+              <div class="flex gap-2 -skew-x-[330deg]">
+                <i data-feather="twitter" class="text-white"></i>
+                <span>Twitter</span>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="font-poppins tracking-[0.2rem] text-white bg-transparent backdrop-blur-md font-bold py-2 px-3 rounded-sm skew-x-[330deg] hover:box-decoration-slice transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 shadow shadow-yellow-500"
+            >
+              <span class="absolute inset-1"></span>
+              <div class="flex gap-2 -skew-x-[330deg]">
+                <i data-feather="send" class="text-white"></i>
+                <span>Telegram</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="flex flex-wrap justify-center items-center gap-4 mt-6">
+            <img src="./assets/images/brand/solanaLogo.svg" class="w-28" />
+            <img src="./assets/images/brand/raydium.svg" class="w-28" />
+            <img src="./assets/images/brand/coinmarketcap.svg" class="w-28" />
+            <img src="./assets/images/brand/coingecko.svg" class="w-28" />
+          </div>
         </div>
         <div
-          class="text-white flex flex-col md:flex-row justify-center items-center gap-1 text-sm md:text-lg mt-4 font-poppins p-2 bg-transparent backdrop-blur-sm shadow-sm"
+          class="flex justify-center items-center flex-col px-6 flex-1 text-white font-poppins"
         >
-          <span>Presale Wallet:</span>
-          <span id="countdown"></span>
-          <script>
-            function updateCountdown(targetDate) {
-              let now = new Date();
-              let diff = targetDate - now;
-
-              if (diff <= 0) {
-                document.querySelector(
-                  "#countdown"
-                ).innerHTML = `<span id="addressWallet"
-            >7bK1iDoMRJnbj3MU4zzgP5kc88otrwFQVVG7yB9aWTYe</span
-          >`;
-                return;
-              }
-
-              let days = Math.floor(diff / 1000 / 60 / 60 / 24);
-              let hours = Math.floor(diff / 1000 / 60 / 60) % 24;
-              let minutes = Math.floor(diff / 1000 / 60) % 60;
-              let seconds = Math.floor(diff / 1000) % 60;
-
-              document.querySelector(
-                "#countdown"
-              ).innerHTML = `Time left: ${days}d ${hours}h ${minutes}m ${seconds}s`;
-            }
-
-            let targetDate = new Date(2024, 3, 5, 0, 0, 0);
-            console.log(targetDate);
-            updateCountdown(targetDate);
-            setInterval(() => {
-              updateCountdown(targetDate);
-            }, 1000);
-          </script>
-          <span class="bx bx-copy copy text-gray-400"></span>
-        </div>
-
-        <div class="mt-5 flex items-center gap-2 justify-center flex-wrap">
-          <a
-            href="https://raydium.io/swap/"
-            class="font-poppins tracking-[0.2rem] bg-yellow-300 text-gray-800 font-bold py-2 px-8 rounded-sm skew-x-[330deg] hover:bg-yellow-400 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+          <div
+            class="flex flex-col w-[100%] md:w-[60%] gap-2 bg-transparent backdrop-blur-lg p-4 shadow rounded shadow-yellow-500 mt-20"
           >
-            <span
-              class="absolute inset-1 bg-transparent rounded-sm border-black border-2"
-            ></span>
-            <div class="-skew-x-[330deg]">BUY NOW</div>
-          </a>
-
-          <a
-            href="https://twitter.com/Realgrumpycats?t=wYUNWzV7qfXEhGsgJQnUOA&s=09"
-            class="font-poppins tracking-[0.2rem] text-white bg-transparent backdrop-blur-md font-bold py-2 px-3 rounded-sm skew-x-[330deg] hover:box-decoration-slice transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 shadow shadow-yellow-500"
-          >
-            <span class="absolute inset-1"></span>
-            <div class="flex gap-2 -skew-x-[330deg]">
-              <i data-feather="twitter" class="text-white"></i>
-              <span>Twitter</span>
+            <h2 class="text-center font-bold text-xl">Presales Wallet</h2>
+            <div class="flex justify-between">
+              <span>Min</span> <span>0.5 SOL</span>
             </div>
-          </a>
-          <a
-            href="#"
-            class="font-poppins tracking-[0.2rem] text-white bg-transparent backdrop-blur-md font-bold py-2 px-3 rounded-sm skew-x-[330deg] hover:box-decoration-slice transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 shadow shadow-yellow-500"
-          >
-            <span class="absolute inset-1"></span>
-            <div class="flex gap-2 -skew-x-[330deg]">
-              <i data-feather="send" class="text-white"></i>
-              <span>Telegram</span>
+            <div class="flex justify-between">
+              <span>Max</span> <span>5 SOL</span>
             </div>
-          </a>
-        </div>
+            <input
+              type="number"
+              value="0.5"
+              min="0"
+              max="5"
+              class="p-2 outline-none border-none rounded bg-slate-800"
+            />
+            <div
+              class="mt-4 font-poppins bg-yellow-300 text-gray-800 font-bold py-2 px-8 rounded-sm hover:bg-yellow-400 transition duration-300 ease-in-out transform hover:-translate-y-1"
+            >
+              <span
+                class="absolute inset-1 bg-transparent rounded-sm border-black border-2"
+              ></span>
+              <div class="flex justify-center">
+                <span id="countdown"></span>
+              </div>
+              <script>
+                function updateCountdown(targetDate) {
+                  let now = new Date();
+                  let diff = targetDate - now;
 
-        <div class="flex flex-wrap justify-center items-center gap-4 mt-6">
-          <img src="./assets/images/brand/solanaLogo.svg" class="w-28" />
-          <img src="./assets/images/brand/raydium.svg" class="w-28" />
-          <img src="./assets/images/brand/coinmarketcap.svg" class="w-28" />
-          <img src="./assets/images/brand/coingecko.svg" class="w-28" />
+                  if (diff <= 0) {
+                    document.querySelector(
+                      "#countdown"
+                    ).innerHTML = `<span id="addressWallet"
+              >7bK1iDoMRJnbj3MU4zzgP5kc88otrwFQVVG7yB9aWTYe</span
+            >`;
+                    return;
+                  }
+
+                  let days = Math.floor(diff / 1000 / 60 / 60 / 24);
+                  let hours = Math.floor(diff / 1000 / 60 / 60) % 24;
+                  let minutes = Math.floor(diff / 1000 / 60) % 60;
+                  let seconds = Math.floor(diff / 1000) % 60;
+
+                  document.querySelector(
+                    "#countdown"
+                  ).innerHTML = `Time left: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+                }
+
+                let targetDate = new Date(2024, 3, 5, 0, 0, 0);
+                console.log(targetDate);
+                updateCountdown(targetDate);
+                setInterval(() => {
+                  updateCountdown(targetDate);
+                }, 1000);
+              </script>
+            </div>
+            <div></div>
+          </div>
         </div>
       </div>
     </section>
