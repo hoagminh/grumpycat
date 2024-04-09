@@ -112,9 +112,11 @@
             <h2 class="text-center font-bold text-xl">Presales Grumpycat</h2>
             <div class="flex flex-col lg:flex-row justify-between">
               <span>CA :</span>
-              <span class="text-xs lg:text-base"
-                >7bK1iDoMRJnbj3MU4zzgP5kc88otrwFQVVG7yB9aWTYe</span
-              >
+              <div>
+                <span class="text-xs lg:text-base" id="addressWallet"
+                  >7bK1iDoMRJnbj3MU4zzgP5kc88otrwFQVVG7yB9aWTYe</span
+                ><span class="bx bx-copy copy"></span>
+              </div>
             </div>
             <div class="flex justify-between">
               <span>Min :</span>
@@ -155,7 +157,7 @@
                 class="absolute inset-1 bg-transparent rounded-sm border-black border-2"
               ></span>
               <div class="flex justify-center">
-                <span id="countdown"></span>
+                <div id="countdown"></div>
               </div>
               <script>
                 function updateCountdown(targetDate) {
@@ -165,7 +167,7 @@
                   if (diff <= 0) {
                     document.querySelector(
                       "#countdown"
-                    ).innerHTML = `CA:7bK1iDoMRJnbj3MU4zzgP5kc88otrwFQVVG7yB9aWTYe`;
+                    ).innerHTML = `<span id='addressWallet'>CA:7bK1iDoMRJnbj3MU4zzgP5kc88otrwFQVVG7yB9aWTYe</span>`;
                     return;
                   }
 
